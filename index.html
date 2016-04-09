@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hdm">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="dor amir">
+<title>HDM lab</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+    </style>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/angular.min.js"></script> -->
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
+<script src="js/typed.min.js"></script>
+<script>
+  $(function(){
+      $(".brand-heading").typed({
+        strings: ["HDM lab"],
+        typeSpeed: 80
+      });
+  });
+</script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <!-- <script src="bower_components/angular-filter/dist/angular-filter.min.js"></script> -->
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+
+<script src="js/app.module.js"></script>
+<script src="js/controller/homeController.js"></script>
+
+
+</head>
+<body ng-controller="homeController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="index.html">
+		HDM lab </a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="index.html">Home</a>
+			</li>
+			<li>
+			<a href="site.html#/people">People</a>
+			</li>
+			<li>
+			<a href="site.html#/uprojects">Undergraduate Projects</a>
+			</li>
+			<li>
+			<a href="contact.html">Old Lab Pics</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="brand-heading"></h1>
+				<p class="intro-text">
+					The Human Computer Decision-Making Lab at Ben-Gurion University
+				</p>
+				<a href="#about" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- About Section -->
+<section id="about">
+<div class="container content-section ">
+	<div class="row">
+			<div class="col-lg-6">
+
+		<h2 class="text-center">LIL' ABOUT US</h2>
+			<p>
+				The human-computer decision-making lab (hdm@bgu) at  Ben-Gurion University focuses on the analysis and design of agent-technologies for interacting with people using a multi-faceted approach, drawing on artificial intelligence (knowledge representation and learning), psychology (social and cognitive factors), and economics (behavioral game theoretic paradigms). 
+			</p>
+			</div>
+				<div class="col-lg-6">
+
+		<h2 class="text-center">Latest News</h2>
+			<ul>
+<li class="news" ng-repeat="news in data.news">
+	{{news.title}} <a ng-if="news.link" href="{{news.link}}">Read More</a>
+</li>
+			</ul>
+			
+		</div>
+	</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		Copyright &copy; HDM lab 2015<br/>
+	</p>
+</div>
+</footer>
+
+</body>
+</html>

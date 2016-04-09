@@ -1,0 +1,205 @@
+{
+  "years": [
+    {
+      "year": "2013-14",
+      "projects": [
+        {
+          "title": "Automatic Lip-Synching using Kinect",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://drive.google.com/open?id=0B9VEpEJMPzNbTDVwZXNKRHZncWM&authuser=0"
+            },
+            {
+              "text": "presentation",
+              "href": "https://drive.google.com/open?id=0B-3-ZUXJntoyeGFqdnppZU1mc1k&authuser=0"
+            }
+          ]
+        },
+        {
+          "title": "BEELabs. Running behavioral experiments on the web. ",
+          "author": "Elad Shamir and SIvan Dagan.",
+          "links": [
+            {
+              "text": "video",
+              "href": "https://www.youtube.com/watch?v=NEppL6TBnZo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2012-13",
+      "projects": [
+        {
+          "title": "The Online Virginity Test. ",
+          "author": "Maor Tal and Meir Levy.",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/a0wp6aq0qemo6k9/OVTFinalDoc.pdf?dl=0"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/cgbsfaec8ycsbwj/OVT%20Presentation.pptx?dl=0"
+            }
+          ]
+        },
+        {
+          "title": "Electronic Medical Records System for the Refugee Clinic in Tel-Aviv",
+          "author": "Yonatan Grinberg and Adam Laoz",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/qftcm26uxtwc4u6/openMRS.pdf"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/ajhu0hxw0zaxbic/Presentation.pptx"
+            }
+          ]
+        },
+        {
+          "title": "Matching questions to students in e-learning using data mining techniques. ",
+          "author": "Nitzan Mazor and Anat Givli",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/f0hr43xqx0ijani/NitzanAnat.docx"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/dz6wuizvmf5npmd/%D7%9E%D7%A6%D7%92%D7%AA%20-%20%D7%9E%D7%91%D7%97%D7%9F%20%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98.pptx"
+            }
+          ]
+        },
+        {
+          "title": "Human Behavior in Position Auctions.",
+          "author": "Grisha Ezretz and Vicheslav Karoian",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/vdq4m0j4qvgdml0/positionAuction.pdf"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/n5ez4r8dgd8e37e/Final%20Day-v2.pptx"
+            }
+          ]
+        },
+        {
+          "title": "Visualizing students' activities in Exploratory Learning Environments.",
+          "author": "Aviad Cohen and Gil Yosef",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/zfww2lud59o1jdm/MCSA_Project_Report_2013.pdf"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/2zfa56c2p8ia8rk/MCSA_Presentation_Project_28_Final.pptx"
+            }
+          ]
+        },
+        {
+          "title": "Perception visualization across cultures using Amazon Turk.",
+          "author": "Yael Jacobson and Lee Sandor",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/e6jw2vxrpid8oqg/report.pdf"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/pnrm2zpsrgdxs6d/presentation.pptx"
+            }
+          ]
+        },
+        {
+          "title": "Automatic Lip Reading using Machine Learning.",
+          "author": "Sagi Bernstein, Dor Leitman, Dagan Sandler.",
+          "links": [
+            {
+              "text": "ARD report",
+              "href": "https://docs.google.com/document/d/1FEc2K-Xub9bxsuYnaonmFD-bCwIgCjVkx_ANL2i5g14/edit?usp=sharing"
+            },
+            {
+              "text": "ADD report",
+              "href": "https://docs.google.com/file/d/0BwKN_HSYxO2cS0ZsdVg0dHU5ZjQ/edit?usp=sharing"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/w0djsu5mgvbcjqb/Prototype%20Presentation.pptx"
+            },
+            {
+              "text": "movie",
+              "href": "http://www.youtube.com/watch?v=o1DwjHK6fL8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2011-12",
+      "projects": [
+        {
+          "title": "Large-scale analysis of students' abilities for solving mathematical problems in educational software. ",
+          "author": "Yossi Ben-David and Adi Zelner",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/4c3caj9acycc6we/FinalProjectReport.pdf"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/zpqm9h3x1af4fwq/FinalVersion.pptx"
+            }
+          ]
+        },
+        {
+          "title": "PedAsisst: A system for generating and automatic grading of multiple-choice exams.",
+          "author": "Yossi Cohen and Zohar Furman",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/qpvtf5thdn2kzji/PedAssist.pdf"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/zpqm9h3x1af4fwq/FinalVersion.pptx"
+            }
+          ]
+        },
+        {
+          "title": "A study of psychophysic studies in Amazon Turk.",
+          "author": "Oran Kaplan and Meir Loichter",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/j858zew5yc5n8hc/%D7%A1%D7%A4%D7%A8%20%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98.pdf"
+            },
+            {
+              "text": "presentation",
+              "href": "https://www.dropbox.com/s/2bj7qrt0vq44etx/final.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Solution visualisation in group decision-making.",
+          "author": "Uri Gur-Aryeh and Lizette Phania",
+          "links": [
+            {
+              "text": "report",
+              "href": "https://www.dropbox.com/s/mkp7jk8euu7risb/%D7%A1%D7%A4%D7%A8%20%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%20%D7%A1%D7%95%D7%A4%D7%99.pdf?dl=0"
+            }
+          ]
+        },
+        {
+          "title": "Adaptive tutor for master learning in elementary school mathematics tutors.",
+          "author": "Kobi Shmerkovich and Erez Ovadia",
+         "links": []
+        }
+      ]
+    }
+  ]
+}

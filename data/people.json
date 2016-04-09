@@ -1,0 +1,31 @@
+{
+  "people": [
+    {
+      "firstName": "Dor",
+      "lastName": "Amir",
+      "img": "img/people/dor.jpg",
+      "rank": "M.Sc Student",
+      "about": "My research is in group decision making, I'm studying the relationship between computational complexity and demonstrability."
+    },
+    {
+      "firstName": "Reuth",
+      "lastName": "Mirsky",
+      "img": "img/people/reuth.jpg",
+      "about": "My research interests are mobility and social data analysis, and I also like to keep an eye on data privacy. I currently work on three main topics: shared transportation, wisdom of the crowd in financial networks, and privacy in tracking technologies",
+      "rank": "Ph.D Student",
+      "website": "https://sites.google.com/site/radaellihomepage/",
+      "scholar": "https://scholar.google.com/citations?user=pkqB2vEAAAAJ&hl=en",
+      "linkedin": "https://www.linkedin.com/profile/view?id=AAkAAAnLITkB2Y7mAl2-frVDicdDV-CMBHfWBko&authType=NAME_SEARCH&authToken=MQ5Q&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CentityType%3AentityHistoryName%2CclickedEntityId%3Amynetwork_164307257%2Cidx%3A0"
+    },
+    
+    {
+      "firstName": "Moshik",
+      "lastName": "Mash",
+      "img": "img/people/moshik.jpg",
+      "about": "As a PhD student at the Big Data Lab I'm passionate about applying computational methods to social sciences and contributing to the findings of new methods to deal with real-life problems.",
+      "rank": "Ph.D Student",
+      "linkedin": "https://il.linkedin.com/in/danapessach"
+    }
+  
+  ]
+}
