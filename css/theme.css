@@ -34,9 +34,9 @@ li.news{
 	padding-top: 10px;
 	font-size: 20px;
 }
-li.news a{
+/*li.news a{
 	color: #337ab7;
-}
+}*/
 a {
 	color:inherit;
 	-webkit-transition:all .2s ease-in-out;

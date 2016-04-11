@@ -5,26 +5,44 @@
 	h3{
 		margin: 15px 0 15px;
 	}
+	p a{
+		    /*border-bottom: 1px dashed #ccc;*/
+	}
+	p a:hover{
+		color: #337ab7;
+		    /*text-decoration: underline;*/
+		        border-bottom: 1px dashed #ccc;
+	}
+	.btnghost{
+		margin-top: 0px;
+	}
+	.clear{
+		margin-top: 90px;
+	}
 </style>
 <div ng-controller="peopleCtrl" class="container content-section ">
 	<h1>people</h1>
 	<hr>
 	<div class="row">
 		<div class="col-lg-6">
-			<h3>Dr. Ya'akov (Kobi) Gal</h3>
+			<h3><a href="site.html#/kobi"> Dr. Ya'akov (Kobi) Gal</a></h3>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-5">
-			<img class="img-responsive" src="img/people/kobigal.jpg">
+		<div class="col-lg-6">
+		<a href="site.html#/kobi">	<img class="img-responsive" src="img/people/kobigal.jpg"></a>
 
 
 		</div>
 		<div class="col-lg-6">
+		
+<div btf-markdown="aboutKobi">
+</div>
+<!-- 
 			<p>
-				Department of Information Systems Engineering
-				Faculty of Engineering Sciences 
-				Ben-Gurion University of the Negev
+				<a target="_blank" href="www.ise.bgu.ac.il"> Department of Information Systems Engineering</a><br>
+			<a target="_blank"  href="http://in.bgu.ac.il/engn/Pages/default.aspx">	Faculty of Engineering Sciences </a><br>
+			<a target="_blank"  href="http://in.bgu.ac.il/Pages/default.aspx">	Ben-Gurion University of the Negev</a>
 
 			</p>
 			<p>
@@ -32,10 +50,30 @@
 			</p>
 			<p>
 				I lead the Human-Computer Decision-Making lab and a proud member of the Artificial Intelligence Group (AIRG) at BGU.<br> 
-				I am also affiliated with the School of Engineering and Applied Sciences at Harvard University
-			</p>
+				I am also affiliated with the <a href="http://www.deas.harvard.edu/"> School of Engineering and Applied Sciences </a> at <a href="http://www.harvard.edu/"> Harvard University</a>
+			</p> -->
+			<br>
+			<br>
+<ul class="list-inline banner-social-buttons">
+				<li>
+			<a href="http://scholar.google.co.il/citations?hl=en&user=lNHuLiQAAAAJ&view_op=list_works" class="btn btnghost btn-lg" target="_blank"><i
+						class="fa fa-2x fa-google"></i> Scholar</a>
+				</li>
+				<li>
+
+
+					<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/g/Gal:Ya=akov.html" class="btn btnghost btn-lg" target="_blank"><i
+						class="fa fa-2x fa-graduation-cap"></i> dblp</a>				</li>
+				
+			</ul>
+
+
+			
+
+
 		</div>
 	</div>
+	<
 	<br>
 	<br>
 	<hr>
@@ -77,5 +115,11 @@
 							</div>
 							<!--</div>-->
 						</div>
+					</div>
+
+					<div class="clear"></div>
+					<div ng-if="data.alumni.length" class="row">
+							<h2>Alumni</h2>
+							<hr>
 					</div>
 				</div>

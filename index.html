@@ -15,6 +15,7 @@
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<script src="https://npmcdn.com/contentful@latest/browser-dist/contentful.min.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,6 +45,11 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
+li.news a:hover{
+		color: #337ab7;
+		    /*text-decoration: underline;*/
+		        border-bottom: 1px dashed #ccc;
+	}
 
     </style>
 <!-- jQuery -->
@@ -60,9 +66,11 @@
   $(function(){
       $(".brand-heading").typed({
         strings: ["HDM lab"],
+        showCursor: false,
         typeSpeed: 80
       });
   });
+
 </script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
@@ -76,7 +84,7 @@
 
 
 </head>
-<body ng-controller="homeController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body ng-controller="homeController"  id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 <div class="container">
@@ -100,7 +108,7 @@
 			<a href="site.html#/uprojects">Undergraduate Projects</a>
 			</li>
 			<li>
-			<a href="contact.html">Old Lab Pics</a>
+			<a href="site.html#/contact">Contact</a>
 			</li>
 		</ul>
 	</div>
@@ -141,8 +149,10 @@
 
 		<h2 class="text-center">Latest News</h2>
 			<ul>
-<li class="news" ng-repeat="news in data.news">
-	{{news.title}} <a ng-if="news.link" href="{{news.link}}">Read More</a>
+<li class="news" ng-repeat="news in data">
+
+	<a ng-if="news.fields.link" href="{{news.fields.link}}">{{news.fields.title}} </a>
+	<span ng-if="!news.fields.link">{{news.fields.title}} </span>
 </li>
 			</ul>
 			
@@ -161,6 +171,8 @@
 	</p>
 </div>
 </footer>
+
+
 
 </body>
 </html>
