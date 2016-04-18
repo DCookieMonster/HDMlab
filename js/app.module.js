@@ -1,4 +1,4 @@
-var app=angular.module('hdm', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
+var app=angular.module('hdm', [ 'ngAnimate', 'ui.bootstrap']);
 
 var app2=angular.module('hdmSite', ['ngRoute','angular.filter', 'ngAnimate', 'ui.bootstrap','ngSanitize',
   'btford.markdown']);

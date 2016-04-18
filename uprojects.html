@@ -5,12 +5,15 @@
 	a{
 		    color: #337ab7;
 	}
+	.dyear{
+		margin-bottom: 30px;
+	}
 </style>
 <div ng-controller="projectCtrl" class="container content-section ">
 	<h1>Undergraduate Projects</h1>
 	<hr>
 	<br><br>
-		<div ng-repeat="year in data.years | orderBy: '-year' ">
+		<div class="dyear" ng-repeat="year in data.years | orderBy: '-year' ">
 		<h2>{{year.year}}</h2>
 		<hr>
 		<div class="row" ng-repeat="project in year.projects | orderBy:'title'">

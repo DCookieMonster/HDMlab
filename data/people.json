@@ -1,10 +1,10 @@
 {
-  "people": [
+  "graduateStudents": [
     {
       "firstName": "Dor",
       "lastName": "Amir",
       "img": "img/people/dor.jpg",
-      "rank": "M.Sc Student",
+      "rank": "MSc Student",
       "about": "My research is in group decision making, I'm studying the relationship between computational complexity and demonstrability."
     },
     {
@@ -21,11 +21,87 @@
       "firstName": "Moshik",
       "lastName": "Mash",
       "img": "img/people/moshik.jpg",
-      "about": "As a PhD student at the Big Data Lab I'm passionate about applying computational methods to social sciences and contributing to the findings of new methods to deal with real-life problems.",
-      "rank": "PhD Student",
-      "linkedin": "https://il.linkedin.com/in/danapessach"
+      "about": "My Ph.D deals with reaching fair agreements in group settings such as fair division (indivisible goods, share rent etc.) and cooperative games.",
+      "rank": "PhD Student"
+    },
+
+
+    {
+      "firstName": "Avi",
+      "lastName": "Segal",
+      "img": "img/people/avatar.jpg",
+      "about": "My thesis work focuses on understanding and influencing the behavior and performance of users in large scale task systems.",
+      "rank": "PhD Student"
+    },
+
+      {
+      "firstName": "Haviv",
+      "lastName": "Herskvovic",
+      "img": "img/people/avatar.jpg",
+      "about": "My thesis work focuses on modeling and predicting student disengagement in e-learning systems.",
+      "rank": "MSc Student"
+    },
+
+    {
+      "firstName": "Eran",
+      "lastName": "Yogev",
+      "img": "img/people/eran.jpg",
+      "about": "My main interests are NLP and AI, My thesis topic is on Modeling student behavior in online forums. Predicting responses, staff intervention and cognitive engagement for student posts.",
+      "rank": "MSc Student",
+      "linkedin": "https://www.linkedin.com/in/eran-yogev-7b1842a7"
     }
   
   ],
-  "alumni":[]
+
+  "undergraduateStudents":[
+
+
+        {
+      "firstName": "Assaf",
+      "lastName": "Avinoam",
+      "img": "img/people/assaf.jpg",
+      "about": "Software Engineering Student, currently working on the Incentive Server",
+      "rank": "BSc Student"  
+    },
+
+        {
+      "firstName": "Roy",
+      "lastName": "Fairstein",
+      "img": "img/people/roy.jpg",
+      "about": "nota-bene: building data bases and help to improve exists projects",
+      "rank": "BSc Student"  
+    }
+  ],
+  "alumni":[
+{
+      "firstName": "Ofra",
+      "lastName": "Amir",
+      "img": "img/people/ofra.jpg",
+      "about": "I am currently working on developing algorithms and intelligent systems to support information sharing in distributed teamwork. I am broadly interested in AI and HCI.",
+      "rank": "PhD candidate at Harvard University",
+      "website":"http://scholar.harvard.edu/oamir/",
+      "scholar": "https://scholar.google.com/citations?user=WS5b_koAAAAJ&hl=en",
+      "thesis":"https://www.dropbox.com/s/l2pn1lcmf2qnbn8/thesisFinal.pdf"
+    },
+    {
+      "firstName": "Or",
+      "lastName": "Seri",
+      "img": "img/people/or.jpg",
+      "about": "I researched how students improve their problem solving of statistics problems using worked examples, correct and with errors. I used different visualizations of the same examples, linear visualization and hierarchical visualization, built by Plan Recognition algorithm.",
+      "rank": "MA, BSc",
+      "linkedin":"https://www.linkedin.com/in/or-seri-4b141317",
+      "facebook":"https://www.facebook.com/or.seri.9",
+            "thesis":"https://www.dropbox.com/s/8g90qgzcbtltthu/MA_Thesis_OR_SERI_final.pdf"
+
+    },
+       {
+      "firstName": "Litan",
+      "lastName": "Ilany",
+      "img": "img/people/avatar.jpg",
+      "about": "I researched algorithm Selection in Bilateral Negotiation.",
+      "rank": "Intel research lab at Haifa",
+      "thesis":"https://www.dropbox.com/s/eas64dzbyx5wglx/port.pdf"
+    }
+
+  ]
 }
