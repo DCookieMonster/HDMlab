@@ -35,10 +35,12 @@ app.controller("homeController", ["$scope", "$http",
 // }
 
   
-    $http.get("https://cdn.contentful.com/spaces/oms6o6p0a1c2/entries?access_token=f4a10de7d79820fd2c5559abb51c928a89e3df67b7ea0955dbb59ff22c9586d9&content_type=news")
+    $http.get("https://cdn.contentful.com/spaces/oms6o6p0a1c2/entries?access_token=f4a10de7d79820fd2c5559abb51c928a89e3df67b7ea0955dbb59ff22c9586d9&content_type=news&order")
     .then(function(response) {
     	console.log(response.data.items);
+    
         $scope.data = response.data.items;
+
     });
 }]);
 

@@ -31,12 +31,12 @@
 	<hr>
 	<div class="row">
 		<div class="col-lg-6">
-			<h3><a href="site.html#/kobi"> Dr. Ya'akov (Kobi) Gal</a></h3>
+			<h3><a target="_blank" href="http://www.eecs.harvard.edu/~gal/"> Dr. Ya'akov (Kobi) Gal</a></h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-6">
-		<a href="site.html#/kobi">	<img class="img-responsive" src="img/people/kobigal.jpg"></a>
+		<a target="_blank" href="http://www.eecs.harvard.edu/~gal/">	<img class="img-responsive" src="img/people/kobigal.jpg"></a>
 
 
 		</div>
@@ -89,9 +89,9 @@
 							<h2>Graduate students</h2>
 							<hr>
 					</div>
-	<div class="row rpeople" ng-repeat="peoples in data.graduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
+	<div class="row rpeople" ng-repeat="peoples in people.graduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
 
-		<div class="col-md-4 text-center person"
+		<div class="col-md-3 text-center person"
 		ng-repeat="p in peoples | orderBy:'firstName' | orderBy : '-rank'">
 		<!--<div class="thumbnail">-->
 		<img class="img-responsive" ng-src="{{p.img}}" alt="{{p.firstName}}" title="{{p.firstName}}">
@@ -132,7 +132,7 @@
 							<h2>Undergraduate students</h2>
 							<hr>
 					</div>
-						<div class="row" ng-repeat="peoples in data.undergraduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
+						<div class="row" ng-repeat="peoples in people.undergraduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
 
 		<div class="col-md-4 text-center person"
 		ng-repeat="p in peoples | orderBy:'firstName' | orderBy : '-rank'">
@@ -186,7 +186,7 @@
 							<h2>Alumni</h2>
 							<hr>
 					</div>
-						<div class="row" ng-repeat="peoples in data.alumni | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
+						<div class="row" ng-repeat="peoples in people.alumni | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
 
 		<div class="col-md-4 text-center person"
 		ng-repeat="p in peoples | orderBy:'firstName' | orderBy : '-rank'">
@@ -204,7 +204,9 @@
 				<span ng-if="!p.website">{{p.firstName + " " + p.lastName}}<br></span>
 				<small>{{p.rank}}</small>
 			</h3>
+
 			<p class="about">{{p.about}}</p>
+	
 			<ul class="list-inline">
 				<!--linkedin-->
 				<li ng-if="p.linkedin"><a href="{{p.linkedin}}" target="_blank"><i
