@@ -89,7 +89,7 @@
 							<h2>Graduate students</h2>
 							<hr>
 					</div>
-	<div class="row rpeople" ng-repeat="peoples in people.graduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
+	<div class="row rpeople" ng-repeat="peoples in people.graduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:4">
 
 		<div class="col-md-3 text-center person"
 		ng-repeat="p in peoples | orderBy:'firstName' | orderBy : '-rank'">
@@ -132,9 +132,9 @@
 							<h2>Undergraduate students</h2>
 							<hr>
 					</div>
-						<div class="row" ng-repeat="peoples in people.undergraduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
+						<div class="row" ng-repeat="peoples in people.undergraduateStudents | orderBy:'firstName' | orderBy : '-rank'| chunkBy:4">
 
-		<div class="col-md-4 text-center person"
+		<div class="col-md-3 text-center person"
 		ng-repeat="p in peoples | orderBy:'firstName' | orderBy : '-rank'">
 		<!--<div class="thumbnail">-->
 		<a ng-if="p.website" href="{{p.website}}">
@@ -186,9 +186,9 @@
 							<h2>Alumni</h2>
 							<hr>
 					</div>
-						<div class="row" ng-repeat="peoples in people.alumni | orderBy:'firstName' | orderBy : '-rank'| chunkBy:3">
+						<div class="row" ng-repeat="peoples in people.alumni | orderBy:'firstName' | orderBy : '-rank'| chunkBy:4">
 
-		<div class="col-md-4 text-center person"
+		<div class="col-md-3 text-center person"
 		ng-repeat="p in peoples | orderBy:'firstName' | orderBy : '-rank'">
 		<!--<div class="thumbnail">-->
 		<a ng-if="p.website" href="{{p.website}}">
