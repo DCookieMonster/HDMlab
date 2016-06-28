@@ -82,7 +82,7 @@ app2.controller("dorCtrl", function ($scope, $http) {
     //       $scope.kobi = response.data.items[0].fields;
 
     //   });
-
+    $('html,body').scrollTop(0);
 });
 
 app2.controller("picCtrl",  function($scope, $http) {
