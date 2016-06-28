@@ -17,10 +17,9 @@ app2.config(['$routeProvider', '$locationProvider',
             when('/pic', {
                 templateUrl: 'pic.html',
                 controller: 'picCtrl'
-            }).
-            when('/kobi', {
-                templateUrl: 'kobi.html',
-                controller: 'kobiCtrl'
+            }).when('/dor', {
+            templateUrl: 'dor.html',
+            controller: 'dorCtrl'
             }).
                  when('/contact', {
                 templateUrl: 'contact.html',
