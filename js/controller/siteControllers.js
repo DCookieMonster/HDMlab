@@ -56,14 +56,76 @@ app2.controller("peopleCtrl",  function($scope, $http) {
     });
 });
 
+//
+//app2.controller("projectCtrl",  function($scope, $http) {
+//    $http.get("data/projects.json")
+//    .then(function(response) {
+//        $scope.data = response.data;
+//
+//    });
+//});
 
 app2.controller("projectCtrl",  function($scope, $http) {
-    $http.get("data/projects.json")
-    .then(function(response) {
-        $scope.data = response.data;
+    $http.get("https://cdn.contentful.com/spaces/oms6o6p0a1c2/entries?access_token=f4a10de7d79820fd2c5559abb51c928a89e3df67b7ea0955dbb59ff22c9586d9&content_type=projects")
+        .then(function (response) {
+            $http.get("https://cdn.contentful.com/spaces/oms6o6p0a1c2/entries?access_token=f4a10de7d79820fd2c5559abb51c928a89e3df67b7ea0955dbb59ff22c9586d9&content_type=links")
+                .then(function (response2) {
+                    if (response2.data.items) {
+                        //creating new object to hold the project all by the same year
+                        var year = function (name) {
+                            this.name = name,
+                                this.projects = []
+                        };
 
-    });
+                        //create the array of projects by year
+                        $scope.projects = {
+                            years: []
+                        };
+
+                        //adding all the projects to the correct year
+                        if (response.data.items) {
+                            var b = response.data.items;
+                            response.data.items.forEach(function (item, index) {
+                                var project = item.fields;
+                                var inside = false;
+
+                                //creating a new array holding all the actual links not only sys information
+                                project.readylinks = [];
+                                if (project.links) {
+                                    project.links.forEach(function (link, index) {
+                                        var linkid = link.sys.id;
+                                        //finding the correct link from the list by it id
+                                        response2.data.items.forEach(function (li, i) {
+                                            if (linkid == li.sys.id) {
+                                                project.readylinks.push(li.fields);
+                                            }
+                                        })
+                                    })
+                                }
+
+                                $scope.projects.years.forEach(function (itemy, i) {
+                                    //if the year already exsist adding the project
+                                    if (project.year == itemy.name) {
+                                        itemy.projects.push(project);
+                                        inside = true;
+                                        // console.log(project.year);
+                                    }
+                                })
+                                //create new year and adding the project
+                                if (!inside) {
+                                    var y = new year(project.year);
+                                    y.projects.push(project);
+                                    $scope.projects.years.push(y);
+                                }
+                                // console.log(project.year);
+                                //console.log(project);
+                            })
+                        }
+                    }
+                });
+        });
 });
+
 
 app2.controller("kobiCtrl",  function($scope, $http) {
   $http.get("https://cdn.contentful.com/spaces/oms6o6p0a1c2/entries?access_token=f4a10de7d79820fd2c5559abb51c928a89e3df67b7ea0955dbb59ff22c9586d9&content_type=kobi")
