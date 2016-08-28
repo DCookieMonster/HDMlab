@@ -1,0 +1,67 @@
+<style type="text/css">
+    p{
+        margin-bottom: 15px;
+    }
+    a{
+        color: #337ab7;
+    }
+    .title
+    {
+        font-size:x-large;
+    }
+    .link{
+        font-size:large;
+    }
+    .details{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+</style>
+
+<div ng-controller="gprojectCtrl" class="container content-section ">
+    <h1>Projects</h1>
+    <hr>
+
+    <div class="gprojects1" ng-repeat=" proj in projects | orderBy:'-updatedAt'  ">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="title"> <b>{{proj.title}}</b> </p>
+            </div>
+            <div class="col-lg-12">
+                <p class="title">  <i>{{proj.author}}</i> </p>
+            </div>
+            <br><br>
+        </div>
+
+        <!--if an image Exists-->
+        <div ng-if="proj.readyImg"  class="row">
+            <div class="col-lg-5">
+                <img class="img-responsive" ng-src="{{proj.readyImg}}">
+            </div>
+            <div class="col-lg-7">
+                <p> {{proj.details}}</p>
+            </div>
+        </div>
+
+        <!--it an Image not Exists-->
+        <div ng-if="!proj.readyImg" class="row">
+        <div class="details">
+            <p> {{proj.details}}</p>
+        </div>
+        </div>
+
+        <br>
+
+            <div class="col-lg-12">
+        <span  class="link" ng-repeat= " link in proj.readylinks | orderBy:'title'">
+		 		[<a target="_blank" href="{{link.link}}">{{link.title}}</a>]
+		 </span>
+            </div>
+        
+        <br><br><br>
+    </div>
+    
+    </div>
+
