@@ -10,6 +10,10 @@ app2.config(['$routeProvider', '$locationProvider',
                 templateUrl: 'people.html',
                 controller: 'peopleCtrl'
             }).
+              when('/gprojects', {
+            templateUrl: 'gprojects.html',
+            controller: 'gprojectCtrl'
+           }).
             when('/uprojects', {
                 templateUrl: 'uprojects.html',
                 controller: 'projectCtrl'
