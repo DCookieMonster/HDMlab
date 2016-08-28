@@ -13,21 +13,18 @@
 	<h1>Undergraduate Projects</h1>
 	<hr>
 	<br><br>
-		<div class="dyear" ng-repeat="year in data.years | orderBy: '-year' ">
-		<h2>{{year.year}}</h2>
+
+		<div class="dyear" ng-repeat=" year in projects.years | orderBy: '-name' ">
+		<h2>{{year.name}} </h2>
 		<hr>
 		<div class="row" ng-repeat="project in year.projects | orderBy:'title'">
-
 		<div class="col-md-8">
 		<p>{{project.title}} <i>{{project.author}}</i> </p>
-
-
 		</div>
 		<div class="col-md-4">
 		<p>
-		 <span  ng-repeat="link in project.links">
-
-		 		[<a target="_blank" href="{{link.href}}">{{link.text}}</a>]
+		 <span  ng-repeat= " link in project.readylinks | orderBy:'title'">
+		 		[<a target="_blank" href="{{link.link}}">{{link.title}}</a>]
 		 </span>
 		</p>
 		</div>
