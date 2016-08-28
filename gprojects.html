@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <!--it an Image not Exists-->
+        <!--if an Image not Exists-->
         <div ng-if="!proj.readyImg" class="row">
         <div class="details">
             <p> {{proj.details}}</p>
@@ -54,14 +54,16 @@
 
         <br>
 
+        <div class="row">
             <div class="col-lg-12">
         <span  class="link" ng-repeat= " link in proj.readylinks | orderBy:'title'">
 		 		[<a target="_blank" href="{{link.link}}">{{link.title}}</a>]
 		 </span>
             </div>
-        
+    </div>
+
         <br><br><br>
     </div>
-    
+
     </div>
 
