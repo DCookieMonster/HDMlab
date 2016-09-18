@@ -164,7 +164,7 @@ li.news a:hover{
 
 		<h2 class="text-center">Latest News</h2>
 			<ul>
-<li class="news" ng-repeat="news in data | orderBy: '-sys.updatedAt' ">
+<li class="news" ng-repeat="news in data | orderBy: '-sys.updatedAt' | limitTo: '5' ">
 	<a target="_blank" ng-if="news.fields.link" href="{{news.fields.link}}">{{news.fields.title}} </a>
 	<span ng-if="!news.fields.link">{{news.fields.title}} </span>
 </li>
