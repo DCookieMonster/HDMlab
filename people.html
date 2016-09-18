@@ -100,7 +100,7 @@
 				<span ng-if="!p.website">{{p.firstName + " " + p.lastName}}<br></span>
 				<small>{{p.rank}}</small>
 			</h3>
-			<p class="about">{{p.about}}</p>
+			<p ng-if="p.about" class="about">{{p.about}}</p>
 			<ul class="list-inline">
 				<!--linkedin-->
 				<li ng-if="p.linkedin"><a href="{{p.linkedin}}" target="_blank"><i
@@ -149,7 +149,7 @@
 				<span ng-if="!p.website">{{p.firstName + " " + p.lastName}}<br></span>
 				<small>{{p.rank}}</small>
 			</h3>
-			<p class="about">{{p.about}}</p>
+			<p ng-if="p.about" class="about">{{p.about}}</p>
 			<ul class="list-inline">
 				<!--linkedin-->
 				<li ng-if="p.linkedin"><a href="{{p.linkedin}}" target="_blank"><i
@@ -204,7 +204,7 @@
 				<small>{{p.rank}}</small>
 			</h3>
 
-			<p class="about">{{p.about}}</p>
+			<p ng-if="p.about" class="about">{{p.about}}</p>
 	
 			<ul class="list-inline">
 				<!--linkedin-->
