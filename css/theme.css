@@ -127,7 +127,7 @@ a:hover,a:focus {
 	padding:100px 0 100px 0;
 	text-align:center;
 	color:#fff;
-	background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.55)), url('../img/2016.jpg');
+	background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.55)), url('../img/2017.png');
 	/*background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('../img/2015-1.jpg');*/
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
