@@ -18,6 +18,10 @@ app2.config(['$routeProvider', '$locationProvider',
                 templateUrl: 'uprojects.html',
                 controller: 'projectCtrl'
             }).
+             when('/gallery', {
+            templateUrl: 'gallery.html',
+            controller: 'galleryCtrl'
+        }   ).
             when('/pic', {
                 templateUrl: 'pic.html',
                 controller: 'picCtrl'
