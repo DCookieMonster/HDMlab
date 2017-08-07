@@ -203,3 +203,49 @@ app2.controller("gprojectCtrl",  function($scope, $http) {
         });
 });
 
+
+app2.controller("galleryCtrl",  function($scope, $http) {
+
+    $http.get("https://cdn.contentful.com/spaces/oms6o6p0a1c2/assets?access_token=f4a10de7d79820fd2c5559abb51c928a89e3df67b7ea0955dbb59ff22c9586d9")
+        .then(function(response) {
+            console.log(response.data.items);
+
+            $scope.assets = response.data.items;
+            $http.get("https://cdn.contentful.com/spaces/oms6o6p0a1c2/entries?access_token=f4a10de7d79820fd2c5559abb51c928a89e3df67b7ea0955dbb59ff22c9586d9&content_type=galleryItem")
+                .then(function(response) {
+                    console.log(response.data.items);
+                    $scope.images=[];
+                    response.data.items.forEach(function(item, index){
+                        var imgSrcId=item.fields.image.sys.id;
+
+                        $scope.assets.forEach(function(it,i){
+                            if (imgSrcId==it.sys.id){
+                                var itemG ={src:"http:"+it.fields.file.url,
+                                desc:item.fields.name};
+                                $scope.images.push(itemG);
+                            }
+                        })
+                    })
+                });
+        });
+    
+// initial image index
+        $scope._Index = 0;
+// if a current image is the same as requested image
+        $scope.isActive = function (index) {
+            return $scope._Index === index;
+        };
+// show prev image
+        $scope.showPrev = function () {
+            $scope._Index = ($scope._Index > 0) ? --$scope._Index : $scope.images.length - 1;
+        };
+// show next image
+        $scope.showNext = function () {
+            $scope._Index = ($scope._Index < $scope.images.length - 1) ? ++$scope._Index : 0;
+        };
+// show a certain image
+        $scope.showPhoto = function (index) {
+            $scope._Index = index;
+        };
+
+    });
